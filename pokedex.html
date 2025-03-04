@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Consulta la Pokédex con información detallada sobre todos los Pokémon.">
+    <meta name="keywords" content="Pokédex, Pokémon, tipos, habilidades, evoluciones">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi PokeInfo</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Pokédex</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="pokedex.html">Pokédex</a></li>
+                <li><a href="#">Juegos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <aside>
+            <h2>Contenido</h2>
+            <ul>
+                <li><a href="#introduccion">Introducción</a></li>
+                <li><a href="#clasificacion">Clasificación</a></li>
+                <li><a href="#tipos">Tipos</a></li>
+                <li><a href="#pokemones">Pokemones</a></li>
+            </ul>
+        </aside>
+
+        <section class="content">
+            <article id="introduccion" class="seccion">
+                <h2>Introducción</h2>
+                <div class="intro-container">
+                    
+                    <p>La Pokédex (ポケモン図鑑 Pokemon Zukan?, Indexador Pokémon, también llamado "Dexter"), en el mundo ficticio de Pokémon, es una enciclopedia electrónica portátil que los entrenadores Pokémon llevan consigo para registrar automáticamente las fichas de todas las diversas especies Pokémon vistas y capturadas durante su viaje como entrenadores</p>
+                    <div class="imagenes">
+                        <img src="img/pokedex.webp" alt="Pokédex">
+                    </div>
+                </div>
+            
+            </article>
+
+            <article id="clasificacion" class="seccion">
+                <h2>Clasificación</h2>
+                <table>
+                    <tr>
+                        <th>Región</th>
+                        <th>Generación</th>
+                        <th>Número de Pokémon</th>
+                    </tr>
+                    <tr><td>Kanto</td><td>1°</td><td>151</td></tr>
+                    <tr><td>Johto</td><td>2°</td><td>100</td></tr>
+                    <tr><td>Hoenn</td><td>3°</td><td>135</td></tr>
+                    <tr><td>Sinnoh</td><td>4°</td><td>107</td></tr>
+                    <tr><td>Unova</td><td>5°</td><td>156</td></tr>
+                    <tr><td>Kalos</td><td>6°</td><td>72</td></tr>
+                    <tr><td>Alola</td><td>7°</td><td>88</td></tr>
+                    <tr><td>Galar</td><td>8°</td><td>96</td></tr>
+                    <tr><td>Paldea</td><td>9°</td><td>120</td></tr>
+                </table>
+            </article>
+
+            <article id="tipos" class="seccion">
+                <h2>Tipos de Pokémon</h2>
+                    <table border="1">
+                        <thead>
+                            <tr>
+                                <th>Tipo</th>
+                                <th>Fortalezas</th>
+                                <th>Debilidades</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="background-color: #919a9b;">💥 Normal</td>
+                                <td>Ninguna en especial</td>
+                                <td>Lucha</td>
+                            </tr>
+                            <tr>
+                                <td style="background-color: #ff9839;">🔥 Fuego</td>
+                                <td>Planta, Hielo, Bicho, Acero</td>
+                                <td>Agua, Roca, Tierra</td>
+                            </tr>
+                            <tr>
+                                <td style="background-color: #39b0e7;">💧 Agua</td>
+                                <td>Fuego, Tierra, Roca</td>
+                                <td>Eléctrico, Planta</td>
+                            </tr>
+                            <tr>
+                                <td style="background-color: #40cf6f;">🍃 Planta</td>
+                                <td>Agua, Tierra, Roca</td>
+                                <td>Fuego, Volador, Hielo, Veneno, Bicho</td>
+                            </tr>
+                            <tr>
+                                <td style="background-color: #f6d831;">⚡ Eléctrico</td>
+                                <td>Agua, Volador</td>
+                                <td>Tierra</td>
+                            </tr>
+                            <tr>
+                                <td style="background-color: #ff84e7;">🧚 Hada</td>
+                                <td>Lucha, Dragón, Siniestro</td>
+                                <td>Acero, Veneno</td>
+                            </tr>
+                            <tr>
+                                <td style="background-color: #bc52e7;">☠️ Veneno</td>
+                                <td>Planta, Hada</td>
+                                <td>Tierra, Psíquico</td>
+                            </tr>
+                            <tr>
+                                <td style="background-color: #c2af6f;">🏜️ Tierra</td>
+                                <td>Eléctrico, Fuego, Veneno, Roca, Acero</td>
+                                <td>Agua, Hielo, Planta</td>
+                            </tr>
+                            <tr>
+                                <td style="background-color: #e88245;">🪨 Roca</td>
+                                <td>Fuego, Hielo, Volador, Bicho</td>
+                                <td>Agua, Planta, Lucha, Tierra, Acero</td>
+                            </tr>
+                            <tr>
+                                <td style="background-color: #ff8783;">🧠 Psíquico</td>
+                                <td>Lucha, Veneno</td>
+                                <td>Siniestro, Bicho, Fantasma</td>
+                            </tr>
+                            <tr>
+                                <td style="background-color: #697b9b; color: white;">🦇 Siniestro</td>
+                                <td>Psíquico, Fantasma</td>
+                                <td>Lucha, Hada, Bicho</td>
+                            </tr>
+                            <tr>
+                                <td style="background-color: #5188bc; color: white;">🐉 Dragón</td>
+                                <td>Dragón</td>
+                                <td>Hielo, Dragón, Hada</td>
+                            </tr>
+                            <tr>
+                                <td style="background-color: #5f64cf; color: white;">👻 Fantasma</td>
+                                <td>Psíquico, Fantasma</td>
+                                <td>Fantasma, Siniestro</td>
+                            </tr>
+                            <tr>
+                                <td style="background-color: #62ccd4;">❄️ Hielo</td>
+                                <td>Planta, Tierra, Dragón, Volador</td>
+                                <td>Fuego, Lucha, Roca, Acero</td>
+                            </tr>
+                            <tr>
+                                <td style="background-color: #5e9fb2; color: white;">⚙️ Acero</td>
+                                <td>Hielo, Roca, Hada</td>
+                                <td>Fuego, Lucha, Tierra</td>
+                            </tr>
+                            <tr>
+                                <td style="background-color: #f4658a; color: white;">🏋️ Lucha</td>
+                                <td>Normal, Hielo, Roca, Siniestro, Acero</td>
+                                <td>Psíquico, Volador, Hada</td>
+                            </tr>
+                            <tr>
+                                <td style="background-color: #517cd4;">🌬️ Volador</td>
+                                <td>Planta, Lucha, Bicho</td>
+                                <td>Eléctrico, Hielo, Roca</td>
+                            </tr>
+                            <tr>
+                                <td style="background-color: #a2d438; color: white;">🐞 Bicho</td>
+                                <td>Planta, Psíquico, Siniestro</td>
+                                <td>Fuego, Volador, Roca</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <div class="imagenes">
+                        <img src="img/tipos.webp" width="400" alt="Tipos de Pokémon">
+                    </div>
+               
+                
+            </article>
+
+            <article id="pokemones" class="seccion">
+                <h2>Pokemones</h2>
+                <div class="tarjetas-container">
+                    <div class="tarjeta">
+                        <img src="https://raw.githubusercontent.com/HybridShivam/Pokemon/refs/heads/master/assets/imagesHQ/001.png" alt="Bulbasaur">
+                        <h3>#001 Bulbasaur</h3>
+                        <p>🍃 Tipo: Planta</p>
+                    </div>
+                    <div class="tarjeta">
+                        <img src="https://raw.githubusercontent.com/HybridShivam/Pokemon/refs/heads/master/assets/imagesHQ/002.png" alt="IvySaur">
+                        <h3>#002 IvySaur</h3>
+                        <p>🍃 Tipo: Planta</p>
+                    </div>
+                    <div class="tarjeta">
+                        <img src="https://raw.githubusercontent.com/HybridShivam/Pokemon/refs/heads/master/assets/imagesHQ/003.png" alt="Venusaur">
+                        <h3>#003 Venusaur</h3>
+                        <p>🍃 Tipo: Planta</p>
+                    </div>
+                    <div class="tarjeta">
+                        <img src="https://raw.githubusercontent.com/HybridShivam/Pokemon/refs/heads/master/assets/imagesHQ/004.png" alt="Charmander">
+                        <h3>#004 Charmander</h3>
+                        <p>🔥 Tipo: Fuego</p>
+                    </div>
+                    <div class="tarjeta">
+                        <img src="https://raw.githubusercontent.com/HybridShivam/Pokemon/refs/heads/master/assets/imagesHQ/005.png" alt="Charmeleon">
+                        <h3>#005 Charmeleon</h3>
+                        <p>🔥 Tipo: Fuego</p>
+                    </div>
+                    <div class="tarjeta">
+                        <img src="https://raw.githubusercontent.com/HybridShivam/Pokemon/refs/heads/master/assets/imagesHQ/006.png" alt="Charizard">
+                        <h3>#006 Charizard</h3>
+                        <p>🔥 Tipo: Fuego</p>
+                    </div>
+                    <div class="tarjeta">
+                        <img src="https://raw.githubusercontent.com/HybridShivam/Pokemon/refs/heads/master/assets/imagesHQ/007.png" alt="Squirtle">
+                        <h3>#007 Squirtle</h3>
+                        <p>💧 Tipo: Agua</p>
+                    </div>
+                    <div class="tarjeta">
+                        <img src="https://raw.githubusercontent.com/HybridShivam/Pokemon/refs/heads/master/assets/imagesHQ/008.png" alt="Wartortle">
+                        <h3>#008 Wartortle</h3>
+                        <p>💧 Tipo: Agua</p>
+                    </div>
+                    <div class="tarjeta">
+                        <img src="https://raw.githubusercontent.com/HybridShivam/Pokemon/refs/heads/master/assets/imagesHQ/009.png" alt="Blastoise">
+                        <h3>#009 Blastoise</h3>
+                        <p>💧 Tipo: Agua</p>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>©2025 Pokédex Fan Page - @PierreCastillo</p>
+    </footer>
+
+</body>
+</html>

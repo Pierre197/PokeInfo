@@ -1,0 +1,273 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    text-align: justify;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #ffcc00;
+    padding: 15px;
+    text-align: center;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #333;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 120px;
+    padding: 20px;
+    width: 100%;
+    gap: 20px;
+    justify-content: center;
+}
+
+aside {
+    flex: 1;
+    min-width: 200px;
+    max-width: 250px;
+}
+
+aside h2 {
+    text-align: center;
+}
+
+aside ul {
+    padding: 0;
+    list-style: none;
+}
+
+aside li {
+    padding: 10px;
+}
+
+/* Tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    background-color: #fff;
+}
+
+th {
+    background-color: #ffcc00;
+}
+
+.content {
+    flex: 3;
+    min-width: 300px;
+    max-width: 800px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.seccion {
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #ffe680;
+    margin-bottom: 20px;
+}
+
+article {
+    scroll-margin-top: 160px;
+}
+
+.imagenes img:hover {
+    transform: scale(1.1);
+}
+
+.intro-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px; 
+}
+
+.intro-container p {
+    flex: 1; 
+    text-align: justify;
+    margin: 0; 
+}
+
+.intro-container .imagenes {
+    flex-shrink: 0; 
+}
+
+.intro-container .imagenes img {
+    width: 300px; 
+    height: auto;
+}
+
+.tarjetas-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    justify-content: center;
+    margin-top: 15px;
+    padding: 10px;
+}
+
+.tarjeta {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.tarjeta img {
+    max-width: 100%;
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+.tarjeta:hover {
+    transform: scale(1.05);
+}
+
+.imagenes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.imagenes img {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.main-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px; 
+    margin: 160px auto; 
+    padding: 20px;
+    background-color: #fff; 
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+label{
+    text-align: left;
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px; 
+}
+
+input, textarea {
+    width: calc(100% - 20px); 
+    padding: 10px; 
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px; 
+}
+
+button {
+    background-color: #ffcc00; 
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    width: 100%; 
+    cursor: pointer;
+    border-radius: 5px; 
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #e6b800 
+}
+
+footer {
+    background-color: #ffcc00;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    aside {
+        position: static;
+        text-align: center;
+    }
+
+    .content {
+        width: 90%;
+    }
+
+    .imagenes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tarjetas-container {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+    .tarjeta img {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+@media (max-width: 480px) {
+    .tarjetas-container {
+        grid-template-columns: 1fr;
+    }
+    .tarjeta img {
+        width: 70px;
+        height: 70px;
+    }
+}
