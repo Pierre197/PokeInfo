@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Explora los diferentes juegos de Pokémon a través de las generaciones y plataformas">
+    <meta name="keywords" content="Pokémon, juegos, Game Boy, Game Boy Advance, Nintendo DS, Nintendo Switch">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juegos - Mi PokeInfo</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-light">
+    <div class="wrapper">
+        <!-- Navbar fija -->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-warning">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="#">Mi PokeInfo</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pokedex.html">Pokedex</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="juegos.html">Juegos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Contenido principal -->
+        <div class="main-content">
+            <div class="container mt-4">
+                <div class="row">
+                    <!-- Sidebar -->
+                    <div class="col-md-3">
+                        <div class="position-sticky" style="top: 5rem;">
+                            <h2 class="h4 mb-3">Contenido</h2>
+                            <div class="list-group shadow-sm">
+                                <a href="#gameboy" class="list-group-item list-group-item-action">Game Boy</a>
+                                <a href="#gba" class="list-group-item list-group-item-action">Game Boy Advance</a>
+                                <a href="#nds" class="list-group-item list-group-item-action">Nintendo DS</a>
+                                <a href="#switch" class="list-group-item list-group-item-action">Nintendo Switch</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contenido principal -->
+                    <div class="col-md-9">
+                        <!-- Game Boy -->
+                        <div id="gameboy" class="bg-warning-subtle rounded p-4 shadow-sm mb-4">
+                            <h2 class="mb-3">Game Boy (1996-2000)</h2>
+                            <div class="row align-items-center">
+                                <div class="col-md-8">
+                                    <p>La aventura Pokémon comenzó en la Game Boy original con Pokémon Red y Green en Japón, seguidos por Red y Blue internacionalmente. Estos juegos establecieron las bases de la serie con 151 Pokémon originales.</p>
+                                    <ul class="list-group list-group-flush bg-transparent">
+                                        <li class="list-group-item bg-transparent">🎮 Pokémon Red & Blue (1996/1998)</li>
+                                        <li class="list-group-item bg-transparent">🎮 Pokémon Yellow: Special Pikachu Edition (1998/1999)</li>
+                                        <li class="list-group-item bg-transparent">🎮 Pokémon Trading Card Game (1998)</li>
+                                        <li class="list-group-item bg-transparent">🎮 Pokémon Gold & Silver (1999/2000)</li>
+                                        <li class="list-group-item bg-transparent">🎮 Pokémon Crystal (2000/2001)</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4">
+                                    <img src="img/gameboy.webp" alt="Game Boy Games" class="img-fluid rounded shadow-sm img-hover game-img">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Game Boy Advance -->
+                        <div id="gba" class="bg-warning-subtle rounded p-4 shadow-sm mb-4">
+                            <h2 class="mb-3">Game Boy Advance (2002-2005)</h2>
+                            <div class="row align-items-center">
+                                <div class="col-md-8">
+                                    <p>La era GBA trajo gráficos mejorados y nuevas mecánicas de juego, introduciendo habilidades Pokémon y naturalezas, además de batallas dobles.</p>
+                                    <ul class="list-group list-group-flush bg-transparent">
+                                        <li class="list-group-item bg-transparent">🎮 Pokémon Ruby & Sapphire (2002/2003)</li>
+                                        <li class="list-group-item bg-transparent">🎮 Pokémon FireRed & LeafGreen (2004)</li>
+                                        <li class="list-group-item bg-transparent">🎮 Pokémon Emerald (2004/2005)</li>
+                                        <li class="list-group-item bg-transparent">🎮 Pokémon Mystery Dungeon: Red Rescue Team (2005)</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4">
+                                            <img src="img/gba.webp" class="img-fluid rounded shadow-sm img-hover game-img" alt="Game Boy Advance con Pokémon">
+                                        
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Nintendo DS -->
+                        <div id="nds" class="bg-warning-subtle rounded p-4 shadow-sm mb-4">
+                            <h2 class="mb-3">Nintendo DS (2006-2012)</h2>
+                            <div class="row align-items-center">
+                                <div class="col-md-8">
+                                    <p>La Nintendo DS revolucionó la serie con gráficos 3D, conectividad en línea y el uso de la pantalla táctil para nuevas mecánicas de juego.</p>
+                                    <ul class="list-group list-group-flush bg-transparent">
+                                        <li class="list-group-item bg-transparent">🎮 Pokémon Diamond & Pearl (2006/2007)</li>
+                                        <li class="list-group-item bg-transparent">🎮 Pokémon Platinum (2008/2009)</li>
+                                        <li class="list-group-item bg-transparent">🎮 Pokémon HeartGold & SoulSilver (2009/2010)</li>
+                                        <li class="list-group-item bg-transparent">🎮 Pokémon Black & White (2010/2011)</li>
+                                        <li class="list-group-item bg-transparent">🎮 Pokémon Black 2 & White 2 (2012)</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4">
+                                            <img src="img/nds.webp" class="img-fluid rounded shadow-sm img-hover game-img" alt="Nintendo DS con Pokémon">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Nintendo Switch -->
+                        <div id="switch" class="bg-warning-subtle rounded p-4 shadow-sm mb-4">
+                            <h2 class="mb-3">Nintendo Switch (2019-Presente)</h2>
+                            <div class="row align-items-center">
+                                <div class="col-md-8">
+                                    <p>La Nintendo Switch marca una nueva era para Pokémon con gráficos HD, mundos abiertos y una experiencia más inmersiva que nunca.</p>
+                                    <ul class="list-group list-group-flush bg-transparent">
+                                        <li class="list-group-item bg-transparent">🎮 Pokémon Sword & Shield (2019)</li>
+                                        <li class="list-group-item bg-transparent">🎮 Pokémon Brilliant Diamond & Shining Pearl (2021)</li>
+                                        <li class="list-group-item bg-transparent">🎮 Pokémon Legends: Arceus (2022)</li>
+                                        <li class="list-group-item bg-transparent">🎮 Pokémon Scarlet & Violet (2022)</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4">
+                                            <img src="img/switch.webp" class="img-fluid rounded shadow-sm img-hover game-img" alt="Nintendo Switch con Pokémon">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="bg-warning text-center py-3 mt-4">
+            <p class="mb-0">©2025 Pokédex Fan Page - @PierreCastillo</p>
+        </footer>
+    </div>
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html> 
