@@ -17,6 +17,7 @@ footer {
     scroll-margin-top: 100px;
 }
 
+
 /* Colores de tipos Pokémon */
 .bg-normal { background-color: #919a9b !important; }
 .bg-fire { background-color: #ff9839 !important; }
@@ -37,33 +38,7 @@ footer {
 .bg-flying { background-color: #517cd4 !important; }
 .bg-bug { background-color: #a2d438 !important; }
 
-/* Animación para las imágenes de juegos */
-/* Animación para las imágenes de juegos */
-/* Efecto hover para imágenes */
-.img-hover, .game-img {
-    transition: transform 0.3s ease;
-}
-
-.img-hover:hover, .game-img:hover {
-    transform: scale(1.1);
-}
-
-/* Animación para las imágenes de juegos */
-.game-card {
-    position: relative;
-    overflow: hidden; /* Controlamos el desbordamiento */
-}
-
-.game-img-container {
-    position: relative;
-}
-
-.game-img {
-    width: 100%;
-    height: auto;
-}
-
-/* Animación para las tarjetas de Pokémon */
+/* Animación para tarjetas Pokémon */
 .pokemon-card {
     transition: all 0.3s ease;
     background: linear-gradient(145deg, #ffffff 0%, #f8f9fa 100%);
@@ -91,4 +66,128 @@ footer {
 
 .pokemon-card:hover .card-body {
     background: linear-gradient(145deg, #fff5d6 0%, #fff9e6 100%);
+}
+
+@keyframes floatAnimation {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes hoverIndex {
+    0% { transform: scale(1)}
+    50% { transform: scale(1.1)}
+    100% { transform: scale(1)}
+}
+
+/* Aplicamos la animación a las imágenes del index */
+.img-hover {
+    transition: transform 0.3s ease;
+    animation: floatAnimation 3s ease-in-out infinite;
+}
+
+.img-hover:hover {
+    animation: hoverIndex 1.5s ease-in-out infinite;
+    filter: brightness(110%);/* Pausa la animación al hacer hover */
+}
+
+
+@keyframes gameImageAnimation {
+    0% {
+        transform: translateY(0) scale(1) rotate(0);
+        filter: brightness(100%);
+        box-shadow: 0 0 20px rgba(255, 193, 7, 0.2);
+    }
+    25% {
+        transform: translateY(-10px) scale(1.03) rotate(2deg);
+        filter: brightness(110%);
+        box-shadow: 0 10px 25px rgba(255, 193, 7, 0.3);
+    }
+    50% {
+        transform: translateY(5px) scale(1.05) rotate(-2deg);
+        filter: brightness(120%);
+        box-shadow: 0 15px 30px rgba(255, 193, 7, 0.4);
+    }
+    75% {
+        transform: translateY(-5px) scale(1.03) rotate(1deg);
+        filter: brightness(110%);
+        box-shadow: 0 10px 25px rgba(255, 193, 7, 0.3);
+    }
+    100% {
+        transform: translateY(0) scale(1) rotate(0);
+        filter: brightness(100%);
+        box-shadow: 0 0 20px rgba(255, 193, 7, 0.2);
+    }
+}
+
+@keyframes hoverGame {
+    0% {
+        transform: perspective(1000px) rotateX(0) rotateY(0) scale(1);
+        filter: brightness(100%);
+    }
+    25% {
+        transform: perspective(1000px) rotateX(10deg) rotateY(15deg) scale(1.1);
+        filter: brightness(110%);
+    }
+    50% {
+        transform: perspective(1000px) rotateX(-5deg) rotateY(-10deg) scale(1.15);
+        filter: brightness(120%);
+    }
+    75% {
+        transform: perspective(1000px) rotateX(10deg) rotateY(15deg) scale(1.1);
+        filter: brightness(110%);
+    }
+    100% {
+        transform: perspective(1000px) rotateX(0) rotateY(0) scale(1);
+        filter: brightness(100%);
+    }
+}
+
+.game-img {
+    transition: all 0.5s ease;
+    animation: gameImageAnimation 5s ease-in-out infinite;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.game-img:hover {
+    animation: hoverGame 2s ease-in-out infinite;
+    box-shadow: 
+        0 0 30px rgba(255, 193, 7, 0.4),
+        0 0 50px rgba(255, 193, 7, 0.2),
+        0 0 70px rgba(255, 193, 7, 0.1);
+}
+
+.game-img::after {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    border: 2px solid rgba(255, 193, 7, 0.5);
+    border-radius: 10px;
+    animation: borderAnimation 2s linear infinite;
+    pointer-events: none;
+}
+
+@keyframes borderAnimation {
+    0% {
+        transform: scale(1);
+        opacity: 0.5;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 0.8;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0.5;
+    }
 }
